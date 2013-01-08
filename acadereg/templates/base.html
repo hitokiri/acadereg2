@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="es_SV">
+<head>
+	<meta charset="UTF-8">
+	<title>{%block titulo%} Sistema Acadereg {%endblock%} </title>
+	<script type="text/javascript" src= "{{STATIC_URL}}js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src= "{{STATIC_URL}}js/jquery.ui.core.js"></script>
+	<script type="text/javascript" src= "{{STATIC_URL}}js/jquery.ui.datepicker.js "></script>
+	<script type="text/javascript" src= "{{STATIC_URL}}js/jquery.ui.widget.js "></script>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/jquery.ui.all.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/base.css">
+	{% block escript_extras %}{% endblock escript_extras %}
+	{% block extra_ccs %}{% endblock extra_ccs %}
+	{%block jquery%}{%endblock%}
+</head>
+<body>
+	<header>
+		 <h2 id ="nombreSistema">Acadereg - </h2>
+		<div id="titulo"> <h2>{% block pagina %}{% endblock pagina %}</h2>  </div>
+		<div id="datos"> {% block datos_secion %}{% endblock datos_secion %} </div>
+
+
+
+
+	</header>
+	<nav>
+			{% block menuextra %}{% endblock menuextra %}
+	</nav>
+
+	<section>
+		<aside>
+
+		</aside>
+
+		<article>
+			<div class="contenido">
+				{%block contenido%}{%endblock%}
+			</div>
+
+		</article>
+
+	</section>
+
+	<footer>
+	{% block pie %}{% endblock pie %}
+	</footer>
+
+</body>
+</html>

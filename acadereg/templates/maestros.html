@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<form action="add " method = "post"> {%csrf_token%}
+		{{formulario.as_p}}
+		<input type="submit" value="enviar">
+	</form>
+{%for dato in datos%}
+	{{dato.nombres}}
+{%endfor%}
+</body>
+</html>

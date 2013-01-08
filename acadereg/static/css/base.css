@@ -1,0 +1,66 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-size: 16px;
+}
+
+header {
+
+	padding: .5em 0em .5em 0;
+	color: white;
+	background-color: black;
+	width: 100%;
+	/*border-bottom: solid gray 3px;*/
+	box-shadow:
+	0 0 0 2px #000,
+	0 0 0 3px #999,
+	0 0 0 9px #fa0,
+	0 0 0 10px #666,
+	0 0 0 16px #fd0,
+	0 0 0 18px #000;
+}
+header #nombreSistema{
+	display: inline-block;
+	margin-left: 2em;
+}
+
+/*area de  declaracion de Id*/
+#datos {
+	text-align: right;
+	width: 65%;
+	display: inline-block;
+
+}
+
+#logo {
+	display: inline-block;
+	width: 20%;
+	display: inline-block;
+	background-color: green;
+}
+
+#titulo {
+	font-weight: bold;
+	width: 20%;
+	display: inline-block;
+
+}
+
+/*Area de creacion de clases */
+
+/*Area de creacion de clases */
+.contenido{
+	margin: 3% 0 0 10%;
+
+	border-radius: 30px;
+	padding: 5% 20% 5% 20%;
+	max-width: 40%;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+.inscripcion{
+	max-width: 400px;
+	margin: 0 0 0 0;
+}
